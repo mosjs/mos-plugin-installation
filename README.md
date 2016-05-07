@@ -59,7 +59,8 @@ If the package has `peerDependencies`, the installation command will suggest to 
 <!--@dependencies({ shield: 'flat-square' })-->
 ## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-installation/master)
 
-None
+- [markdownscript](https://github.com/zkochan/markdownscript): Creates markdown Abstract Syntax Tree
+
 <!--/@-->
 
 <!--@devDependencies({ shield: 'flat-square' })-->
