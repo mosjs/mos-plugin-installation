@@ -44,7 +44,9 @@ If the package has `peerDependencies`, the installation command will suggest to 
 
 ## API
 
-`installation()`
+`installation(opts)`
+
+- `opts.useShortAlias` - _Boolean_, false by default. If true, uses shorter aliases in the installation command. `i` instead of `install`, `-S` instead of `--save`, etc.
 
 <!--@license()-->
 ## License
