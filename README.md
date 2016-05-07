@@ -40,6 +40,8 @@ The plugin will use information from the `package.json` in order to figure out w
 - If there is a `private: true`, the command instruction will suggest to clone the repo and install its dependencies
 - Otherwise, the generated command will be `npm install --save`
 
+If the package has `peerDependencies`, the installation command will suggest to install all the peer dependencies with the package.
+
 ## API
 
 `installation()`
