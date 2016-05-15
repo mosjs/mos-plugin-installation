@@ -29,7 +29,7 @@ module.exports = (mos, md) => {
   })
 
   function createCommand (opts) {
-    opts = opts || {}
+    opts = Object.assign({}, md.options, opts || {})
     const commands = opts.useShortAlias ? shortCommands : fullCommands
     if (md.pkg.private || md.pkg.license === 'private') {
       return [
