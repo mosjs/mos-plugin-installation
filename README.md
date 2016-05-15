@@ -1,8 +1,8 @@
-<!--@'# ' + package.name-->
+<!--@h1([pkg.name])-->
 # mos-plugin-installation
 <!--/@-->
 
-<!--@'> ' + package.description-->
+<!--@blockquote([pkg.description])-->
 > A mos plugin for creating installation section
 <!--/@-->
 
@@ -10,13 +10,11 @@
 [![NPM version](https://img.shields.io/npm/v/mos-plugin-installation.svg?style=flat-square)](https://www.npmjs.com/package/mos-plugin-installation) [![Build status for master](https://img.shields.io/travis/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://travis-ci.org/zkochan/mos-plugin-installation) [![Test coverage for master](https://img.shields.io/coveralls/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://coveralls.io/r/zkochan/mos-plugin-installation?branch=master)
 <!--/@-->
 
-<!--@installation()-->
+<!--@installation({useShortAlias: true})-->
 ## Installation
 
-This module is installed via npm:
-
 ```sh
-npm install mos-plugin-installation --save
+npm i -S mos-plugin-installation
 ```
 <!--/@-->
 
