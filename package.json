@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha && npm run lint && mos test -x=\"test/**\"",
-    "lint": "eslint lib/**/*.js index.js",
+    "lint": "eslint lib/**/*.js index.js index.spec.js",
     "commit": "git-cz",
     "coverage": "istanbul cover -x \"**/*.spec.js\" node_modules/mocha/bin/_mocha -- -R spec",
     "precoveralls": "istanbul cover -x \"**/*.spec.js\" node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && npm i coveralls@2",
