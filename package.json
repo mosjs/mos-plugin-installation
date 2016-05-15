@@ -3,8 +3,7 @@
   "version": "0.0.0-placeholder",
   "description": "A mos plugin for creating installation section",
   "files": [
-    "index.js",
-    "lib"
+    "index.js"
   ],
   "main": "index.js",
   "scripts": {
