@@ -36,7 +36,8 @@
   },
   "homepage": "https://github.com/zkochan/mos-plugin-installation#readme",
   "dependencies": {
-    "markdownscript": "^1.1.0"
+    "markdownscript": "^1.1.0",
+    "mdast-util-to-string": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.4.1",

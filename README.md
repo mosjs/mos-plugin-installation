@@ -58,6 +58,7 @@ If the package has `peerDependencies`, the installation command will suggest to 
 ## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-installation/master)
 
 - [markdownscript](https://github.com/zkochan/markdownscript): Creates markdown Abstract Syntax Tree
+- [mdast-util-to-string](https://github.com/wooorm/mdast-util-to-string): Utility to get the plain text content of a node
 
 <!--/@-->
 
