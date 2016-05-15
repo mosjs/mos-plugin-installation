@@ -7,7 +7,7 @@
 <!--/@-->
 
 <!--@shields.flatSquare('npm', 'travis', 'coveralls')-->
-[![NPM version](https://img.shields.io/npm/v/mos-plugin-installation.svg?style=flat-square)](https://www.npmjs.com/package/mos-plugin-installation) [![Build status for master](https://img.shields.io/travis/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://travis-ci.org/zkochan/mos-plugin-installation) [![Test coverage for master](https://img.shields.io/coveralls/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://coveralls.io/r/zkochan/mos-plugin-installation?branch=master)
+[![NPM version](https://img.shields.io/npm/v/mos-plugin-installation.svg?style=flat-square)](https://www.npmjs.com/package/mos-plugin-installation) [![Build status for master](https://img.shields.io/travis/mosjs/mos-plugin-installation/master.svg?style=flat-square)](https://travis-ci.org/mosjs/mos-plugin-installation) [![Test coverage for master](https://img.shields.io/coveralls/mosjs/mos-plugin-installation/master.svg?style=flat-square)](https://coveralls.io/r/mosjs/mos-plugin-installation?branch=master)
 <!--/@-->
 
 <!--@installation({useShortAlias: true})-->
@@ -55,7 +55,7 @@ If the package has `peerDependencies`, the installation command will suggest to 
 * * *
 
 <!--@dependencies({ shield: 'flat-square' })-->
-## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-installation/master)
+## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/mosjs/mos-plugin-installation/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-installation/master)
 
 - [markdownscript](https://github.com/zkochan/markdownscript): Creates markdown Abstract Syntax Tree
 - [mdast-util-to-string](https://github.com/wooorm/mdast-util-to-string): Utility to get the plain text content of a node
@@ -63,7 +63,7 @@ If the package has `peerDependencies`, the installation command will suggest to 
 <!--/@-->
 
 <!--@devDependencies({ shield: 'flat-square' })-->
-## <a name="dev-dependencies">Dev Dependencies</a> [![devDependency status for master](https://img.shields.io/david/dev/zkochan/mos-plugin-installation/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-installation/master#info=devDependencies)
+## <a name="dev-dependencies">Dev Dependencies</a> [![devDependency status for master](https://img.shields.io/david/dev/mosjs/mos-plugin-installation/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-installation/master#info=devDependencies)
 
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog): Commitizen adapter following the conventional-changelog format.
