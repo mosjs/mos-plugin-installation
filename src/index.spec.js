@@ -4,12 +4,12 @@ const it = require('mocha').it
 const expect = require('chai').expect
 const path = require('path')
 const fs = require('fs')
-const ROOT = path.join(__dirname, 'test/fixtures')
+const ROOT = path.resolve(__dirname, '../test/fixtures')
 const fixtures = fs.readdirSync(ROOT).filter(filepath => filepath.indexOf('.') !== 0)
 
 const mos = require('mos-processor')
 const ejs = require('mos-plugin-ejs')
-const installation = require('.')
+import installation from './index'
 
 describe('mos-plugin-toc', () => {
   fixtures.forEach(fixture => {

@@ -18,7 +18,7 @@ const shortCommands = {
   global: '-g',
 }
 
-module.exports = (mos, md) => {
+export default function plugin (mos, md) {
   mos.compile.pre((next, ast, opts) => {
     ast.children = updateInstallationSection(ast.children)
     return next(ast, opts)
@@ -77,6 +77,6 @@ module.exports = (mos, md) => {
   }
 }
 
-module.exports.attributes = {
-  pkg: require('./package.json'),
+plugin.attributes = {
+  pkg: require('../package.json'),
 }
