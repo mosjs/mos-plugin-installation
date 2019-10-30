@@ -44,14 +44,31 @@ export default function plugin (mos, md) {
     if (md.pkg.private || md.pkg.license === 'private') {
       return [
         `git clone ${md.repo.clone_url} && cd ./${md.repo.repo}`,
+        '',
+        '# via NPM',
         `npm ${commands.install}`,
+        '',
+        '# via Yarn',
+        'yarn',
       ].join('\n')
     }
     const installedPkgs = Object.keys(md.pkg.peerDependencies || {}).concat(md.pkg.name).join(' ')
     if (md.pkg.preferDev) {
-      return `npm ${commands.install} ${commands.saveDev} ${installedPkgs}`
+      return [
+        '# via NPM',
+        `npm ${commands.install} ${commands.saveDev} ${installedPkgs}`,
+        '',
+        '# via Yarn',
+        `yarn add --dev ${installedPkgs}`,
+      ].join('\n')
     }
-    return `npm ${commands.install} ${md.pkg.preferGlobal ? commands.global : commands.save} ${installedPkgs}`
+    return [
+      '# via NPM',
+      `npm ${commands.install} ${md.pkg.preferGlobal ? commands.global : commands.save} ${installedPkgs}`,
+      '',
+      '# via Yarn',
+      `yarn${md.pkg.preferGlobal ? ' global' : ''} add ${installedPkgs}`,
+    ].join('\n')
   }
 
   function updateInstallationSection (children) {
